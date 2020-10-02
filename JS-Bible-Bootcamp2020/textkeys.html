@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Keys</title>
+</head>
+<body>
+    <h1>OBJ Text</h1>
+    <div class="button">
+        <button id="one">AA</button>
+        <button id="two">AB</button>
+        <button id="three">AC</button>
+        <br>
+        <br>
+        <textarea id="text" placeholder="Enter a text to read ..."></textarea>
+        <div id="words">
+            <h1></h1>
+        </div>
+    </div>
+    <style>
+        button {
+            background-color: darksalmon;
+              padding: 10px 20px;
+              border: 0;
+        }
+    </style>
+
+    <script>
+
+        const first = document.getElementById("one");
+        const two = document.getElementById('two');
+        const three = document.getElementById("three");
+
+        const textShow = document.getElementById('text');
+        const wordsLine = document.getElementById("words");
+
+
+        //Adevent listners
+        first.addEventListener('click' , addText);
+    </script>
+</body>
+</html>
