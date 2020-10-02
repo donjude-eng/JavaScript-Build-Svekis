@@ -193,13 +193,34 @@ const myObject = {
  *
  */
 
- let objectwithNestedObject = {};
+//  let objectwithNestedObject = {};
 
-objectwithNestedObject.nestedObject = {};
+// objectwithNestedObject.nestedObject = {};
 
-objectwithNestedObject.nestedObject.a = null;
+// objectwithNestedObject.nestedObject.a = null;
 
-const newPropertName = "b";
+// const newPropertName = "b";
 
-objectwithNestedObject.nestedObject[newPropertName] = "Don Jude";
-console.log(objectwithNestedObject)
+// objectwithNestedObject.nestedObject[newPropertName] = "Don Jude";
+// console.log(objectwithNestedObject)
+
+
+// let myDetails = {
+//     name : "DOn Jude",
+//     address : "Mandapathil",
+//     status : true,
+//     numberOfCars : 15,
+//     vistedPlaces: 50,
+
+//     "homedetail" : {
+//         city: "Pulpally",
+//         job : "farmer"
+//     }
+// }
+
+// myDetails.name = "sarath";
+
+// let place = "Place"
+// myDetails.place = "kattikulam";
+// console.log(myDetails)
+// delete myDetails.status;
