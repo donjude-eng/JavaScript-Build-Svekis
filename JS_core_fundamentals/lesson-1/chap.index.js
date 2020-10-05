@@ -95,7 +95,7 @@ if(name === "Don") {
 }
 
 // Other method
-let userName = prompt("What is your name?");
+//let userName = prompt("What is your name?");
 //let message = "Welcomdvdve to my site ";
 //console.log(//////message + userName);
 
@@ -150,7 +150,68 @@ let secondNum = 10;
 firstNum ++; //10
 secondNum --; //0
 let total = firstNum + secondNum; //10 or 15
-console.log(total) //
+//console.log(total) //
 total = 500 + 100 / 5 + total;
-console.log(total);
+//console.log(total);
 
+//Challenge #2 - Miles to Kilometer Converter
+//let miles = prompt("Number of miles?");
+//let numMiles = Number(miles);
+//let kiloMiles = (numMiles * 1.64934);
+//console.log(`5 miles is  ${kiloMiles}`);
+
+//Lesson Challenge
+
+// let checkNum = "5";
+
+//if (checkNum) {
+    //console.log("Yes, the number is True")
+//}
+//if (checkNum > 50){
+    //console.log("It's bigger than 50")
+//}
+// if(checkNum === 5) {
+//     //console.log("Yes")
+// }
+
+// console.log(checkNum)
+
+let number = 10;
+if(number > 10){
+    //console.log("True")
+} else if (number >= 11) {
+    //console.log("True True")
+} else if (number < 9) {
+   //console.log("True True True")
+} else {
+   // console.log(" All false")
+}
+
+// function number(num) {
+//     console.log(num)
+//   if(num > 10){
+//       console.log("Hello Number")
+//   }
+// }
+// number(14);
+
+//IF else lesson challenge
+// function greaterCheck(num){
+//     if(num > 10) {
+//        // console.log("Yes it is greater than 10")
+//     } else if(num == 10) {
+//       //  console.log("Yes it is equal to 10")
+//     } else {
+//        // console.log("It is less than 10")
+//     }
+
+// }
+// greaterCheck(5);
+
+//ODD OR EVEN MODULUS THE OUTPUT;
+
+let tempnum = 11;
+
+let tempVal = (tempnum % 2) ? "ODD" : "EVEN";
+// console.log(tempnum);
+// console.log(tempVal);
