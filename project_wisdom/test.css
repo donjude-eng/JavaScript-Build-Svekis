@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+​ .card {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+}
+​ .green {
+  background: green;
+  height: 100%;
+  display: flex;
+}
+​ .red {
+  background: red;
+  width: 200px;
+  height: 100%;
+}
+​ .green h1 {
+  display: inline;
+  writing-mode: sideways-lr;
+  vertical-align: bottom;
+  text-align: start;
+  padding: 5px;
+}
