@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Switcher</title>
+
+    </head>
+
+    <body>
+        <style>
+            body {
+                align-items: center;
+                justify-content: center;
+                height: 50vh;
+                font-family: 'Lato', sans-serif;
+                margin: 0;
+                display: flex;
+                flex-flow: column;
+            }
+
+            a {
+                list-style-type: none;
+                text-decoration: none;
+                color: black;
+            }
+
+            .container {
+                padding: 20px;
+                cursor: pointer;
+                background-color: lightcyan;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+            .container2 {
+                padding: 22px;
+                cursor: pointer;
+                color: black;
+                background-color: brown;
+                text-align: center;
+            }
+
+            .hamburger-inside img {
+                width: 30%;
+                background-color: #fff;
+                cursor: all-scroll;
+            }
+
+            .navElements a {
+                display: block;
+                padding: 5px;
+            }
+
+            .dot-container {
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            .testimonialSecond {
+                display: none;
+            }
+
+            .testimonialThird {
+                display: none;
+            }
+
+            .testimonialFour {
+                display: none;
+            }
+        </style>
+
+        <div class="hamburger" id="hamInside">
+            <div class="hamburger-inside">
+                <img src="img/menu.png" alt="">
+            </div>
+
+            <div id="blockHam">
+                <div class="navElements" id="navChild">
+                    <a href="https://www.google.com/">Books</a>
+                    <a href="#">Notes</a>
+                    <a href="#">Text</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="container">
+            <div>
+                <buton>Change Color</buton>
+            </div>
+        </div>
+
+
+        <div class="container2" id="container2">
+            <div>
+                <buton>Change Text</buton>
+            </div>
+        </div>
+
+        <div class="testimonial" id="testimonial">
+            <div class="testimonial-inside">
+                <div class="testimonialFirst" id="first">
+                    <h1> First Testimonial Arthur WilliamSon</h1>
+                    <p>First the testiomonial contents in an onclick Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cum, quibusdam!.</p>
+                </div>
+
+                <div class="testimonialSecond" id="second">
+                    <h1>Second Testimonial Tom WilliamSon</h1>
+                    <p>Second the testiomonial contents in an onclick Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cum, quibusdam!.</p>
+                </div>
+
+                <div class="testimonialThird" id="third">
+                    <h1>Third Testimonial Rony WilliamSon</h1>
+                    <p>Third the testiomonial contents in an onclick Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cum, quibusdam!.</p>
+                </div>
+
+                <div class="testimonialFour" id="four">
+                    <h1>Fourth Testimonial Rony WilliamSon</h1>
+                    <p>Four the testiomonial contents in an onclick Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cum, quibusdam!.</p>
+                </div>
+
+                <div class="dot-container" id="dotContainer">
+                    <span class="dot" id="dot1"><img src="img/Group 99.svg"></span>
+                    <span class="dot" id="dot2"><img src="img/Group 99.svg"></span>
+                    <span class="dot" id="dot3"><img src="img/Group 99.svg"></span>
+                    <span class="dot" id="dot4"><img src="img/Group 99.svg"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="redtheme" id="colorRed">
+            <button>Red</button>
+        </div>
+
+        <div class="text-box" id="textBox">
+            <textarea></textarea>
+        </div>
+
+
+
+        <script>
+            const colorContainer = document.getElementById('container');
+            const textContainer = document.getElementById('container2');
+            const hamContainer = document.getElementById('hamInside');
+
+
+            const first = document.getElementById('first')
+            const second = document.getElementById('second');
+            const third = document.getElementById('third');
+            const four = document.getElementById('four');
+
+            const dot1 = document.getElementById('dot1');
+            const dot2 = document.getElementById('dot2');
+            const dot3 = document.getElementById('dot3');
+            const dot4 = document.getElementById('dot4');
+
+            const redColor = document.getElementById('colorRed');
+
+            const textbox = document.getElementById('textBox');
+            console.log(textbox)
+
+
+            let count = 1;
+            let submit = 1;
+            let status = 1;
+            let testmonial = 1;
+
+            let color = 1;
+
+            textbox.addEventListener('onChange', e => {
+                console.log(e.target.value)
+            })
+
+            redColor.addEventListener('click', e => {
+                if(color == 0) {
+                    e.target.style.backgroundColor = "red";
+                    color = 1;
+                } else {
+                    e.target.style.backgroundColor = "Brown";
+                    color = 0;
+                }
+            })
+
+            colorContainer.addEventListener('click', e => {
+                if (count == 0) {
+                    container.style.backgroundColor = "black";
+                    container.style.color = "darkgray";
+                    count = 1;
+                } else {
+                    container.style.backgroundColor = "red"
+                    count = 0;
+                }
+            })
+
+            textContainer.addEventListener('click', e => {
+                if (submit == 0) {
+                    container2.style.width = '100%';
+                    submit = 1;
+                } else {
+                    container2.style.width = '50%';
+                    submit = 0;
+                }
+            })
+
+            hamContainer.addEventListener('click', e => {
+                if (status == 0) {
+                    navChild.parentElement.style.display = 'block';
+                    status = 1;
+                } else {
+                    navChild.parentElement.style.display = 'none';
+                    status = 0;
+                }
+            })
+
+            dot1.addEventListener('click', e => {
+                first.style.display = 'block';
+                second.style.display = 'none';
+                third.style.display = 'none';
+                four.style.display = 'none';
+            })
+
+            dot2.addEventListener('click', e => {
+                first.style.display = 'none';
+                second.style.display = 'block';
+                third.style.display = 'none';
+                four.style.display = 'none';
+
+            })
+
+            dot3.addEventListener('click', e => {
+                first.style.display = 'none';
+                second.style.display = 'none';
+                third.style.display = 'block';
+                four.style.display = 'none';
+            })
+
+            dot4.addEventListener('click', e => {
+                first.style.display = 'none';
+                second.style.display = 'none';
+                third.style.display = 'none';
+                four.style.display = 'block';
+            })
+
+        </script>
+    </body>
+
+</html>
