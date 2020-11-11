@@ -1,0 +1,24 @@
+.card-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  height: 300px;
+  width: 30vw;
+  background: green;
+  border: 1px solid red;
+  margin: 1vw;
+  transition: width 2s;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.card:hover{
+    width: 50vw;
+}
