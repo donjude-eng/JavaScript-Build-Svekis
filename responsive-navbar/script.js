@@ -22,9 +22,6 @@ function navSlide(){
 
     })
 
-
-
-
 }
 
 navSlide();
